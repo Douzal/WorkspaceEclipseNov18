@@ -1,0 +1,17 @@
+package fr.afcepf.al32.devise.client;
+
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+public class RmiClientApp {
+
+	public static void main(String[] args) {
+
+		// 1. se connecter à RmiRegistry (localhost ou... , 1099)
+		Registry rmiRegistry = LocalRegistry.getRegistry("localhost", 1099);
+		
+		// 2. récupérer le proxy Rmi de l'objet distant qui a le nom logique "serviceDevise"
+		
+		// 3. appeler des méthodes distantes : 
+	}
+}

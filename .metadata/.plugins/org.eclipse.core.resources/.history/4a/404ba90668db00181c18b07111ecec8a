@@ -1,0 +1,29 @@
+package fr.afcepf.al32.devise.server;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+import fr.afcepf.al32.devise.impl.ServiceDeviseImpl;
+
+public class RmiServApp {
+
+	public static void main(String[] args) {
+
+		// classe de démarrage
+		System.out.println("--demarrage de l'application servRMI...");
+		
+		try {
+			// creation d'une instance de la classe qu'on vient de coder
+			ServiceDeviseImpl serviceDeviseImpl = new ServiceDeviseImpl();
+			
+			// on demarre le serveur de nom logique avec le numero de port choisi
+			rmiRegistry rmiRegistry = LocateRegistry.createRegistry(1099);
+			
+			rmiRegistry.rebind("serviceDevise", serviceDeviseImpl);
+		} catch (RemoteException e) {
+			e.printStackTrace();
+		}
+	}
+
+}
