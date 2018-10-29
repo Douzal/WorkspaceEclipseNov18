@@ -22,7 +22,7 @@ public class ServiceDeviseImpl extends UnicastRemoteObject implements IServiceDe
 		mapDevise.put("EUR", new Devise("EUR", 1.0));
 		mapDevise.put("USD", new Devise("USD", 1.1));
 		mapDevise.put("GDP", new Devise("GDP", 1.15));
-		mapDevise.put("JPY", new Devise("JPY", 1120.0));
+		mapDevise.put("JPY", new Devise("JPY", 1_120.0));
 	}
 
 	public Double convertir(double montant, String monnaieSource, String monnaieCible) {
