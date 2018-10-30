@@ -1,5 +1,0 @@
-package fr.afcepf.al32.devise.impl;
-
-public interface ServiceDeviseImpl extends UnicastRemoteObject implements IService {
-
-}

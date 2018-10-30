@@ -23,7 +23,7 @@ public class ServiceDeviseImpl implements IServiceDevise {
 		mapDevise.put("JPY", new Devise("JPY", 1_120.0));
 	}
 
-	public Double convertir(double montant, String monnaieSource, String monnaieCible) {
+	public Double convertir(Double montant, String monnaieSource, String monnaieCible) {
 		Devise dSource = mapDevise.get(monnaieSource);
 		Devise dCible = mapDevise.get(monnaieCible);
 		return montant * dCible.getChange() / dSource.getChange();

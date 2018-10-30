@@ -4,10 +4,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="fr.afcepf.al32"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="cliSoap"/>
+			<item value="servSoap"/>
+			<item value="cliEjb"/>
+			<item value="servEjb"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -36,6 +41,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\formation\Desktop\MyGitRepos\WorkspaceEclipseNov18\cliRmi"/>
 			<item value="C:\Users\formation\Desktop\MyGitRepos\WorkspaceAlexisEclipseOct2018\servRMI"/>
 			<item value="C:\Users\formation\Desktop\MyGitRepos\JpetStore\src\main\java\org\mybatis\jpetstore\domain\Account.java"/>
 		</list>
@@ -50,15 +56,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="fr.afcepf.al32.cliRmi"/>
-			<item value="fr.afcepf.al32.servRMI"/>
 		</list>
 		<list key="groupId">
-			<item value="fr.afcepf.al32"/>
 		</list>
 		<list key="artifactId">
-			<item value="cliRmi"/>
-			<item value="servRMI"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

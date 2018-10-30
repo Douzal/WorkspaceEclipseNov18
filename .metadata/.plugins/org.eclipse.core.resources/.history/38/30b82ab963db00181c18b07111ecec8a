@@ -1,6 +1,0 @@
-package fr.afcepf.al32.devise.itf;
-
-
-public interface iService extends java.rmi.Remote {
-	double convertir(double montant, String monnaieSource, String monnaieCible);
-}
