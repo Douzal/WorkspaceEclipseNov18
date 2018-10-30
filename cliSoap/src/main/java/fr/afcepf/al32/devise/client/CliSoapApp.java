@@ -1,5 +1,6 @@
 package fr.afcepf.al32.devise.client;
 
+import java.net.InetAddress;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -13,8 +14,11 @@ public class CliSoapApp {
 		// appel du ws soap en s'appuyant sur le code généré par wsimport :
 //		String wsdlUrlAsString = "http://localhost:8080/servSoap/serviceDevise?wsdl";
 //		final String wsdlUrlAsString = "192.168.102.49:8080/servSoap/serviceDevise?wsdl";
-		final String wsdlUrlAsString = "form291:8080/servSoap/serviceDevise?wsdl";
+//		final String wsdlUrlAsString = "form291:8080/servSoap/serviceDevise?wsdl";
+		final String wsdlUrlAsString = "form291:8080/servSoap/serviceDevise?wsdl";// InetAddress.getLocalHost().getHostName()+":8080/servSoap/serviceDevise?wsdl";
+		
 		URL wsdlUrl = null;
+		
 		try {
 			wsdlUrl = new URL(wsdlUrlAsString); //try catch obligatoire
 		} catch (MalformedURLException e) {
