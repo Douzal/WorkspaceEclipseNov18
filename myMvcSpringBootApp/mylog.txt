@@ -51,3 +51,15 @@
 2018-10-31 09:12:37 - configure(1) rest,  http:org.springframework.security.config.annotation.web.builders.HttpSecurity@78847e76
 2018-10-31 09:12:38 - configure(2) mvc,  http:org.springframework.security.config.annotation.web.builders.HttpSecurity@683d7f7f
 2018-10-31 09:12:38 - Started MySpringBootApplication in 5.245 seconds (JVM running for 5.728)
+2018-10-31 15:12:42 - Starting MySpringBootApplication on FORM290 with PID 938604 (C:\Users\formation\Desktop\MyGitRepos\WorkspaceEclipseNov18\myMvcSpringBootApp\target\classes started by formation in C:\Users\formation\Desktop\MyGitRepos\WorkspaceEclipseNov18\myMvcSpringBootApp)
+2018-10-31 15:12:42 - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-31 15:12:42 - No active profile set, falling back to default profiles: default
+2018-10-31 15:12:48 - configure(1) rest,  http:org.springframework.security.config.annotation.web.builders.HttpSecurity@3ff0507d
+2018-10-31 15:12:48 - configure(2) mvc,  http:org.springframework.security.config.annotation.web.builders.HttpSecurity@6d2edf56
+2018-10-31 15:12:49 - Started MySpringBootApplication in 7.907 seconds (JVM running for 8.709)
+2018-10-31 15:18:01 - Starting MySpringBootApplication on FORM290 with PID 890992 (C:\Users\formation\Desktop\MyGitRepos\WorkspaceEclipseNov18\myMvcSpringBootApp\target\classes started by formation in C:\Users\formation\Desktop\MyGitRepos\WorkspaceEclipseNov18\myMvcSpringBootApp)
+2018-10-31 15:18:01 - Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-31 15:18:01 - No active profile set, falling back to default profiles: default
+2018-10-31 15:18:07 - configure(1) rest,  http:org.springframework.security.config.annotation.web.builders.HttpSecurity@3670099b
+2018-10-31 15:18:07 - configure(2) mvc,  http:org.springframework.security.config.annotation.web.builders.HttpSecurity@3d6147c2
+2018-10-31 15:18:08 - Started MySpringBootApplication in 7.475 seconds (JVM running for 8.211)
