@@ -7,8 +7,10 @@
 			<item value="fr.afcepf.al32"/>
 		</list>
 		<list key="name">
+			<item value="tpMyMvcSprinBootApp"/>
 		</list>
 		<list key="artifactId">
+			<item value="tpMyMvcSprinBootApp"/>
 			<item value="servSpringCxf"/>
 			<item value="cliSoap"/>
 			<item value="servSoap"/>
@@ -55,6 +57,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\formation\Desktop\MyGitRepos\WorkspaceEclipseNov18\myMvcSpringBootApp\src\main\resources\application.properties"/>
 			<item value="C:\Users\formation\Desktop\MyGitRepos\WorkspaceEclipseNov18\cliRmi"/>
 			<item value="C:\Users\formation\Desktop\MyGitRepos\WorkspaceAlexisEclipseOct2018\servRMI"/>
 			<item value="C:\Users\formation\Desktop\MyGitRepos\JpetStore\src\main\java\org\mybatis\jpetstore\domain\Account.java"/>

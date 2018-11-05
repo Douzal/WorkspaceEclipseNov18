@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Appel AJAX</title>
+		<script>
+		
+			function makeAjaxRequest(url, callback) {
+				console.log("--Appel AJAX via XMLHttpRequest---");
+				// page 22 ws_rest
+				var xhr = new XMLHttpRequest(); // objet prédéfini du navigateur
+				xhr.onreadystatechange = function() {
+					if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)) {
+						callback(xhr.responseText);
+					}
+				};
+				xhr.open("GET", url, true); // ou url exemple : "rest/blagues?noteMini=2"
+				xhr.send(null);
+			}
+
+			function afficherResultatQuandReponseRevient(sData) {
+				
+				console.log("--Affichage résultat via l'api DOM---");
+				
+				var spanMessage = document.getElementById("spanMessage");
+				var zoneUL = document.getElementById("zoneListe");
+				// on clear la zone
+				zoneUL.innerHTML ="";
+				spanMessage.innerHTML = sData;
+				var listeBlagues = JSON.parse(sData);
+				
+				// let : indique que c'est une variable locale
+				for(let i = 0; i<listeBlagues.length; i++) {
+					var blague = listeBlagues[i];
+					// creation d'un element liste
+					var eltLi = document.createElement("li");
+					eltLi.innerHTML = blague.texte;
+					zoneUL.appendChild(eltLi);
+				}
+			}
+
+			function chercherEtAfficherBlague() {
+				//make AjaxRequest(afficherResultatQUandReponseRevient);
+				var functionCallBack = afficherResultatQuandReponseRevient;
+				var inputNoteMini = document.getElementById("txtNoteMini");
+				var valNoteMini = inputNoteMini.value;
+				var url="rest/blagues";
+				if(valNoteMini!=null) {
+					url+= "?noteMini="+valNoteMini;
+				}
+				makeAjaxRequest(url, functionCallBack);
+			}
+		</script>
+	</head>
+	
+	<body>
+		<h3>Appel de WS REST via Ajax/XMLHttpRequest</h3>
+		noteMini: <input type="text" id="txtNoteMini" /><br />
+		<input type="button" onclick="chercherEtAfficherBlague()"
+		value="recherche blague" /><br />
+		<span id="spanMessage"></span>
+		<ul id="zoneListe">
+			<!-- li ajoutés via code js -->
+		</ul>
+		
+		<a href="Index.html">Lien vers la page Index</a>
+	</body>
+</html>
