@@ -5,7 +5,7 @@
 	<groupId>fr.afcepf.al32</groupId>
 	<artifactId>tpMyMvcSprinBootApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-<!-- 	<name>tpMyMvcSprinBootApp</name> -->
+	<!-- <name>tpMyMvcSprinBootApp</name> -->
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -83,8 +83,6 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>

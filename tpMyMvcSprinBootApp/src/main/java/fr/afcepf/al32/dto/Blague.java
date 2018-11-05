@@ -1,8 +1,17 @@
 package fr.afcepf.al32.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data // equivalent de @Getter + @Setter + @NoArgsConstructor + @AllArgsConstructor + @ToString
+// @Data // equivalent de @Getter + @Setter + @NoArgsConstructor + @AllArgsConstructor + @ToString
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
 public class Blague {
 	private Long id;
 	private String titre;

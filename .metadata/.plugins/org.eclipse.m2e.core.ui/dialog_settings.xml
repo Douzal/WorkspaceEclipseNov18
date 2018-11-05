@@ -10,6 +10,7 @@
 			<item value="tpMyMvcSprinBootApp"/>
 		</list>
 		<list key="artifactId">
+			<item value="tpMvcSpringBootAppItf"/>
 			<item value="tpMyMvcSprinBootApp"/>
 			<item value="servSpringCxf"/>
 			<item value="cliSoap"/>

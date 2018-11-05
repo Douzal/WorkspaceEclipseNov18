@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Appel AJAX con JQuery</title>
+		<script src="lib/jquery-3.3.1.min.js" ></script>
+		<script src="js/monjquery.js" ></script>
+		<script src="js/monjqueryAjoutBlague.js" ></script>
+		
+		<link type="text/css" rel="stylesheet" href="css/maCss.css">
+	</head>
+	
+	<body>
+		<h3>Appel de WS REST via JQuery</h3>
+		noteMini: <input type="text" id="txtNoteMini" /><br />
+		<input type="button" id="btnRechercherBlagues"
+		value="rechercher blagues" /><br />
+		<span id="spanMessage"></span>
+		<ol id="zoneListe">
+			<!-- li ajoutés via code js -->
+		</ol>
+		<hr />
+		<h3>Ajout de nouvelle(s) blague(s)</h3>		
+		Titre : <input type="text" id="idTitre" /><br />
+		Texte : <input type="text" id="idTexte" /><br />
+		<input type="button" id="btnAjouterBlague" value="ajout blague drôle" /><br />
+		<hr />
+		<a href="Index.html">Lien vers la page Index</a>
+	</body>
+</html>

@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,11 +25,11 @@ import fr.afcepf.al32.dto.Blague;
 
 @RestController // @RestController hérite de @Component de Spring
 @RequestMapping(value="/rest/blagues", headers="Accept=application/json")
+@CrossOrigin("*")
 public class BlagueRestCtrl {
 
 	private Map<Long, Blague> mapBlagues = new HashMap<Long, Blague>();
 	private Long cptBlagues;
-	
 	// constructeur vide
 	public BlagueRestCtrl() {
 		mapBlagues.put(1L, new Blague(1L, "Gueubla sur les juifs",
@@ -45,6 +46,7 @@ public class BlagueRestCtrl {
 				"Pourquoi les filles se maquillent et mettent du parfum ? -> parce qu'elles sont moches et qu'elles puent.", 4.4));
 		mapBlagues.put(7L, new Blague(7L, "Ou trouve t-on un tétraplégique ?",
 				"Ou trouve t-on un tétraplégique -> Là où on l'a laissé.", 1.8));
+		cptBlagues=7L;
 	}
 
 	

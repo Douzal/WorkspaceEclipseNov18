@@ -1,0 +1,29 @@
+#zoneListe {
+	color:#4acfee;
+	font-style:bold;
+	border:0.5em solid blue;
+	border-radius:0.5em;
+	background-color:black;
+}
+
+h3 {
+	font-size:2em;
+	font-family:verdana;
+	_align-content:center;
+	text-align:center;
+}
+
+h3:hover {
+	color:red;
+	_font-size:2.1em;
+	font-style:italic;
+	font-family:"comic sans ms";
+	
+	border:0.1em solid red;
+	border-radius:0.1em;
+}
+
+body {
+	font-family:"salesforce sans", "Trebuchet MS", futura, verdana;
+	background-image:URL("https://cdn.pixabay.com/photo/2016/09/08/20/22/cemetery-1655378_960_720.jpg");
+}
